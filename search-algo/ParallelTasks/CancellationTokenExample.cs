@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace search_algo.DesignPatterns.ParallelTasks
+namespace search_algo.ParallelTasks
 {
     public class CancellationTokenExample
     {

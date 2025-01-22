@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using search_algo.DesignPatterns.Delegate;
-using search_algo.LinkedList;
+//using search_algo.Delegate;
+//using search_algo.LinkedList;
 
 namespace search_algo;
 public partial class Program

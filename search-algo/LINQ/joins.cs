@@ -1,5 +1,5 @@
 using System.Linq;
-namespace search_algo.DesignPatterns.LINQ;
+namespace search_algo.LINQ;
 
 class JoinOperations
 {

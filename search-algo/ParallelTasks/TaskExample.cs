@@ -1,18 +1,18 @@
 using System.Diagnostics;
 
-namespace search_algo.DesignPatterns.ParallelTasks;
+namespace search_algo.ParallelTasks;
 public class TaskExample
 {
 
     public static void Executor()
     {
         DoSomething().Wait();
-        System.Console.WriteLine("end Print");
+        Console.WriteLine("end Print");
     }
     public static async Task<int> AddSampling(int i)
     {
         await Task.Delay(1_000);
-        System.Console.WriteLine($"Do some task {i}");
+        Console.WriteLine($"Do some task {i}");
         return 1;
     }
 
@@ -30,6 +30,6 @@ public class TaskExample
         });
         await Task.WhenAll(promise);
         stopwatch.Stop();
-        System.Console.WriteLine($"Time taken to execute : {stopwatch.Elapsed}");
+        Console.WriteLine($"Time taken to execute : {stopwatch.Elapsed}");
     }
 }

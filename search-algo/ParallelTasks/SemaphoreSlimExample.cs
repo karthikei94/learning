@@ -1,4 +1,4 @@
-namespace  search_algo.DesignPatterns.ParallelTasks;
+namespace search_algo.ParallelTasks;
 
 using System.Diagnostics;
 
@@ -48,7 +48,7 @@ public class SemaphoreSlimExample
         string[] Responses = await Task.WhenAll(tasks);
         foreach (var item in Responses)
         {
-            System.Console.WriteLine(item);
+            Console.WriteLine(item);
         }
         stopwatch.Stop();
         Console.WriteLine($"Processing of {creditCards.Count} Credit Cards Done in {stopwatch.ElapsedMilliseconds / 1000.0} Seconds");

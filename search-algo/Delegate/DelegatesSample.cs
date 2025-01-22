@@ -1,6 +1,6 @@
 using System.Runtime.CompilerServices;
 
-namespace search_algo.DesignPatterns.Delegate;
+namespace search_algo.Delegate;
 
 using System;
 using System.Threading;
@@ -37,18 +37,18 @@ public class DelegateExecutor
     {
         WorkPerformedHandler del1 = new WorkPerformedHandler(Worker_WorkPerformed);
         WorkCompletedHandler del2 = new WorkCompletedHandler(Worker_WorkCompleted);
-    
+
         Worker worker = new Worker();
         worker.DoWork(5, "Generate Report", del1, del2);
     }
 
     private static void Worker_WorkCompleted(string workType)
     {
-        System.Console.WriteLine($"{workType} work completed ");
+        Console.WriteLine($"{workType} work completed ");
     }
 
     private static void Worker_WorkPerformed(int hours, string workType)
     {
-        System.Console.WriteLine($"{hours} Hours completed for {workType}");
+        Console.WriteLine($"{hours} Hours completed for {workType}");
     }
 }
